@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psychiatric Appointment Booking</title>
+  <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+<div class="main">
+  <h1>Book a Psychiatric Appointment</h1>
+  <form action="appointment-handler" method="post"><br>
+  
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="date">Preferred Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="time">Preferred Time:</label><br>
+    <input type="time" id="time" name="time" required><br><br>
+
+    <label for="reason">Reason for Appointment:</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="privacy">Privacy Concerns (if any):</label><br>
+    <input type="checkbox" id="privacy" name="privacy_concern" value="yes">
+    <label for="privacy">I have privacy concerns.</label><br><br>
+
+    <label for="consent">Consent for Appointment:</label><br>
+    <input type="checkbox" id="consent" name="consent" value="yes" required>
+    <label for="consent">I consent to the appointment.</label><br><br>
+
+    <input type="submit" value="Book Appointment">
+  </form>
+
+</body>
+</html>

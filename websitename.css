@@ -1,0 +1,9 @@
+.website-name {
+    float: left ;
+    text-align: center;
+    font-weight: bold;
+    margin: right 30px;
+    align-items: center;
+    margin: 29px 0 0 11px;
+    color: white;
+}

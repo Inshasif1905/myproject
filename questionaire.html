@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questionaire.css">
+    <title>Questionnaire</title>
+   </head>
+<body>
+   <h1>Questionnaire</h1>
+    <form>
+        <label for="age">1. What is your age?</label><br>
+        <input type="text" id="age" name="age" required><br><br>
+
+        <label for="gender">2. What is your gender?</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <label for="situation">3. What do you do if you don't feel safe?</label><br>
+       <select id="situation" name="situation">
+        <option value="">-</option>
+                <option value="danger">Call 911 Or Local Authorites</option>
+                <option value="reachout">Reach Out To Family And Friends</option>
+                <option value="professional support">Reach Out To Professional Therepist Or Counsellers</option>
+                <option value="self care">Self Care Practices</option>
+                <option value="community resources">Take Help Of Community Safety Help Groups</option>
+            </select>
+    
+            
+        </select><br><br>
+
+        <label for="feeling">4. How safe do you feel in your neighbourhood and in the community as a whole?</label><br>
+        <input type="text" id="feeling" name="feeling" required><br><br>
+       
+        <label for="concerns">5. How much safety do you have in the community?</label><br>
+        <input type="text" id="concerns" name="concerns" required><br><br>
+
+        <label for="interest">6. Are you interested in participating in a community safety program?</label><br>
+        <textarea id="interest" name="interest" rows="4" required></textarea><br><br>
+        <form>
+            <label>7. Do you want to make and appointment with doctor</label><br>
+            <label for="yes">
+                <input type="radio" id="yes" name="contentHelpful" value="yes" required> Yes
+            </label>
+            <label for="no">
+                <input type="radio" id="no" name="contentHelpful" value="no" required> No
+            </label><br><br>
+        
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        
+        <script>
+            function submitForm() {
+                var isContentHelpful = document.querySelector('input[name="contentHelpful"]:checked');
+        
+                if (isContentHelpful && isContentHelpful.value === 'yes') {
+                    
+                    window.location.href = "appointment.html";
+                } else{
+                    alert('Thank you for your feedback!');
+                }
+                    
+                
+            }
+        </script>
+        
+       
+        
+        </body>
+</html>
+
+
+

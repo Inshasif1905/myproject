@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+background:#c27d42;
+color:black;
+  
+}
+
+.navbar {
+  background: #022444; 
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+li a:hover {
+  background: #022444; 
+}
+
+.main{
+  background-color: #022444;
+  width: 100%;
+  position: fixed;
+  top: 0; 
+}
+form{
+  margin: 0 10px 0 0;
+}
+
+

@@ -1,0 +1,28 @@
+.search-form {
+    float: right;
+    display: flex;
+    margin-left: 53px;
+     position: relative;
+     top: 7%;
+     right: 17px;
+     background: color white;;
+}
+
+.search-form input[type="text"],
+.search-form button {
+    padding: 9px;
+    border: none;
+}
+
+.search-form input[type="text"] {
+    margin-right: 5px; 
+    border-radius: 4px;
+}
+
+.search-form button {
+    background-color: green;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
